@@ -1,0 +1,85 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    background: #f0f2f5;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+.home-title{
+    text-align: center;
+    color: #1877f2;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.post-card{
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-c{
+    max-width: 700px;
+    margin: auto;
+}
+
+.post-text{
+    font-size: 18px;
+    color: #333;
+}
+.delete-btn{
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.delete-btn:hover{
+    opacity: 0.8;
+}
+
+.edit-btn{
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit-btn:hover{
+    background-color: #2980b9;
+}
+
+.save-btn{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.save-btn:hover{
+    background-color: #27ae60;
+}
+
+.edit-in{
+    width: 80%;
+    padding:10px;
+    margin-top:10px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}

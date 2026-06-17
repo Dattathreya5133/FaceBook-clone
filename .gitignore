@@ -1,0 +1,5 @@
+faceback/node-modules/
+facefront/node-modules/
+
+faceback/.env
+facefront/.env
