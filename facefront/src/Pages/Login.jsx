@@ -34,7 +34,7 @@ export default function Login(){
     async function handleSubmit(e){
         e.preventDefault();
         try{
-           const res=await axios.post("http://localhost:3300/api/auth/login",formData);
+           const res=await axios.post("https://facebook-backend-dxez.onrender.com/api/auth/login",formData);
            console.log(res.data.message);
 
            localStorage.setItem("token",res.data.token)

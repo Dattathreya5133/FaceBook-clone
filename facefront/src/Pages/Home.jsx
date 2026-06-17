@@ -14,7 +14,7 @@ export default function Home(){
     async function fetchPosts() {
         try{
             const res = await axios.get(
-                "http://localhost:3300/api/post"
+                "https://facebook-backend-dxez.onrender.com/api/post"
             );
             console.log(res.data);
             setPosts(res.data.posts);
@@ -27,7 +27,7 @@ export default function Home(){
     async function deletePost(id) {
         try{
             const token =localStorage.getItem("token");
-            const res = await axios.delete(`http://localhost:3300/api/post/delete/${id}`,
+            const res = await axios.delete(`https://facebook-backend-dxez.onrender.com/api/post/delete/${id}`,
                 {
                     headers:{
                         Authorization:`Bearer ${token}`
@@ -44,7 +44,7 @@ export default function Home(){
         async function updatePost(id) {
             try{
                 const token =localStorage.getItem("token");
-                const res =await axios.put(`http://localhost:3300/api/post/update/${id}`,
+                const res =await axios.put(`https://facebook-backend-dxez.onrender.com/api/post/update/${id}`,
                     {text:editText},
                     {
                         headers:{

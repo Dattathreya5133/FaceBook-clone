@@ -14,7 +14,7 @@ export default function Createpost(){
             localStorage.getItem("token");
 
             const res =await axios.post(
-                "http://localhost:3300/api/post/create",
+                "https://facebook-backend-dxez.onrender.com/api/post/create",
                 {text},
                 {
                     headers:{

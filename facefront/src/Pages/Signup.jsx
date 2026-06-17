@@ -46,7 +46,7 @@ export default function Signup(){
     async function handleSubmit(e){
         e.preventDefault();
         try{
-            const res =await axios.post("http://localhost:3300/api/auth/signup",
+            const res =await axios.post("https://facebook-backend-dxez.onrender.com/api/auth/signup",
             formData);
         
         console.log(res.data.message);

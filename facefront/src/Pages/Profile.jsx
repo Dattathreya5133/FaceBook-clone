@@ -13,7 +13,7 @@ export default function Profile(){
     async function fetchProfile() {
         try{
             const token = localStorage.getItem("token");
-            const res = await axios.get("http://localhost:3300/api/post/dashboard",
+            const res = await axios.get("https://facebook-backend-dxez.onrender.com/api/post/dashboard",
                 {
                     headers:{
                         Authorization:`Bearer ${token}`
